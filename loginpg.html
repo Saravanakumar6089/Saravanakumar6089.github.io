@@ -10,9 +10,9 @@
 
 
 <body id="b1">
-    <?php 
+    <!--?php 
     session_start();
-?>
+?-->
 
     <div id="h1">
         
@@ -23,12 +23,12 @@
         <p id="link" style="color:rgb(29, 5, 41)">Kindly <a href="#f2">register</a> before login if not registered earlier</p>
     <div id="d1" class="d" align="Center"><h2>Login / Sign up</h2> 
         
-    <?php 
+    <!--?php 
 if (isset($_SESSION['error2'])){
     echo "<font style='color:red'>$_SESSION[error2]</font><br>";
     unset($_SESSION['error']);
 }
-?>
+?-->
      <label for="loginid">User Email Id:</label><br>
       <input required class="t1" type="text" id="loginid" name="loginid"><br><br>
 
@@ -53,12 +53,12 @@ if (isset($_SESSION['error2'])){
                 target="_self" onsubmit="return valid()"style="float:right;width:70%;height:100%" method="post" 
                 action="https://localhost/iteproject/sqlconnect.php" align="center" name="fs">
                     <h2>New User Registration</h2>
-                    <?php 
+                    <!--?php 
 if (isset($_SESSION['error1'])){
     echo "<font style='color:red'>$_SESSION[error1]</font><br>";
     unset($_SESSION['error1']);
 }
-?>
+?-->
             <label class="i1" for="name">Enter your name:</label>
             <input class="t2" type="text" id="name" name="name" placeholder="Full Name" required><br><br>
             <label class="i1" for="course">Course name:</label>
